@@ -1,4 +1,4 @@
 AngelDust
 =========
 
-Window matching utility
+AngelDust is a window matching utility inspired by Devilspie
