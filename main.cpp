@@ -5,7 +5,7 @@
 
 static std::vector<AD::config> configs;
 static std::vector<WnckWindow*> tiled_windows;
-static bool ad_debug = true;
+static bool ad_debug = false;
 static bool simulate = false;
 
 static void on_window_opened(WnckScreen *screen, WnckWindow *window, gpointer data)
@@ -204,6 +204,16 @@ void readfiles()
 
 int main (int argc, char *argv[])
 {
+  if(argc > 1)
+    for (int i = 1; i < argc; ++i)
+    {
+        std::string ar(argv[i]);
+        if( ar == "-d")
+          ad_debug = true;
+        else if( ar == "-s")
+          simulate = true;
+    }
+
   readfiles();
   
   GMainLoop *loop;

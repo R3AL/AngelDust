@@ -1,0 +1,1 @@
+g++ -g -std=c++11 `pkg-config --cflags --libs x11` `pkg-config --cflags --libs libwnck-3.0` main.cpp
