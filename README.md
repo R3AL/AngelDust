@@ -8,66 +8,91 @@ Scripts
 
 - Folder: $HOME/.config/angeldust/
 - Format:
-```"Window name"
-[
-	"Function name": "Function parameters"
-	...
-]```
+
+    <pre>"Window name"
+    [
+        "Function name": "Function parameters"
+        ...
+    ]</pre>
 
 Functions
 =========
 
-```center``` 
-- Parameters: no parameters
+<pre>center</pre>
+- ***Parameters:*** no parameters
 - Centers window on current workspace
 
-```moveTo``` 
-- Parameters: target workspace number
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>moveTo</pre> 
+- ***Parameters:*** target workspace number
 - Moves window to target workspace
 
-```moveActivateTo```
-- Parameters: target workspace number
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>moveActivateTo</pre>
+- ***Parameters:*** target workspace number
 - Moves window and switches to target workspaces and gives focus to window
 
-```move```
-- Parameters: target X and/or Y coordonates
-- Moves window to (X,Y)
-- Note: 
-	to move a window only on one axis use '*' for the other axis
-	Example: moving a window to Y = 50 without knowing X:
-		```"move": "* 50"```
+-------------------------------------------------------------------------------------------------------------------
 
-```setAbove```
-- Parameters: no parameters
+<pre>move</pre>
+- ***Parameters:*** target X and/or Y coordonates
+- Moves window to (X,Y)
+- ***Note:*** 
+
+    to move a window only on one axis use '*' for the other axis
+    
+    ***Example:*** moving a window to Y = 50 without knowing X:
+        <pre>"move": "* 50"</pre>
+
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>setAbove</pre>
+- ***Parameters:*** no parameters
 - Sets the window above all other windows
 
-```setBelow```
-- Parameters: no parameters
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>setBelow</pre>
+- ***Parameters:*** no parameters
 - Sets the window below all other windows
 
-```setFullscreen```
-- Parameters: no parameters
-- Sets the window fullscreen 
-- Noted:
-	window decorations will not be visible
+-------------------------------------------------------------------------------------------------------------------
 
-```setMaximized```
-- Parameters: no parameters
+<pre>setFullscreen</pre>
+- ***Parameters:*** no parameters
+- Sets the window fullscreen 
+- ***Note:***
+    window decorations will not be visible
+
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>setMaximized</pre>
+- ***Parameters:*** no parameters
 - Maximizes the window
 
-```close```
-- Parameters: no parameters
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>close</pre>
+- ***Parameters:*** no parameters
 - Closes the window
 
-```removeDecorations```
-- Parameters: no parameters
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>removeDecorations</pre>
+- ***Parameters:*** no parameters
 - Removes the window decorations
 
-```addDecorations```
-- Parameters: no parameters
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>addDecorations</pre>
+- ***Parameters:*** no parameters
 - Adds the window decorations
 
-```tile```
-- Parameters: no parameters
+-------------------------------------------------------------------------------------------------------------------
+
+<pre>tile</pre>
+- ***Parameters:*** no parameters
 - Adds the window to the tile group
 
